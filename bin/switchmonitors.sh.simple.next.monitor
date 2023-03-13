@@ -1,0 +1,3 @@
+#!/bin/sh
+for ID in $(xsetwacom list | cut -f2 | cut -d' ' -f2); do xsetwacom set "$ID" maptooutput 1440x2560+0+0; done
+
